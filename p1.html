@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book from us </title>
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+     <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>H</span>O<span>T</span>E<span>L</span></a>      
+    <nav class="navbar">
+        <i class="fa fa-home" aria-hidden="true" style="font-size:20px"></i>
+        <a href="#home">Home</a>
+        <a href="#packages">Rooms and suits</a></div>
+        <a href="worker.html">Services</a>
+        <a href="#packages">Offers</a>
+        <a href="#gallery">Gallery</a>
+   </nav>
+
+
+
+
+    <!-- test -->
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <!-- <a href="https://localhost/sem 3 project/register/login.php"><i class="fas fa-user" id="login-btn"></i></a> -->
+    </div>
+    <form action="#" class="search-bar-container" onsubmit="return handleSearch()">
+        <input type="search" id="search-bar" placeholder="Search here..." autofocus>
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+    
+    <script>
+        function handleSearch() {
+            var query = document.getElementById('search-bar').value.trim().toLowerCase();
+            // Navigate to the appropriate page based on the search query
+            if (query === 'booking') {
+                window.location.href = 'booking.html';
+            }
+            else if(query === 'delete booking' || query === 'delete' || query === 'delete data'){
+                window.location.href = 'deletebooking.html';
+            } 
+            else if(query === 'search booking' || query === 'search' || query === 'search data'){
+                window.location.href = 'searchbooking.html';
+            }
+            else if(query === 'worker detail' || query === 'worker' || query === 'worker data'){
+                window.location.href = 'worker.html';
+            }
+            else if(query === 'allworker' || query === 'alldetailworker' || query === 'allworker detail'){
+                window.location.href = 'workerdetail.html';
+            }
+            else {
+                // Handle other search queries or show a message
+                alert('No matching page found for your search query: ' + query);
+            }
+            return false; // Prevent the form from actually submitting
+        }
+    </script>
+    
+    <!-- end test -->
+<form action="" class="search-bar-container">
+    <input type="search" id="search-bar" placeholder="Search here...">
+    <label for="search-bar" class="fas fa-search"></label>
+</form>
+</header>
+
+<section class="home" id="home">
+   <div class="content">
+       <h3>Welcome to a place for perfect staycation</h3>
+       <p>Discover new places with us, luxury awaits</p>
+   </div>
+   <div class="controls">
+       <span class="vid-btn active" data-src="video1.mp4"></span>
+       <span class="vid-btn" data-src="video2.mp4"></span>
+       <span class="vid-btn" data-src="video3.mp4"></span>
+       <span class="vid-btn" data-src="video4.mp4"></span>
+   </div>
+   <div class="video-container">
+       <video src="video1.mp4" id="video-slider" loop autoplay muted></video>
+   </div>
+</section>
+
+<!--home section ends here-->
+
+  <section class="packages" id="packages">
+    <h1 class="heading1">
+        Packages
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img decoding="async" src="mumbaihotel.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> mumbai </h3>
+                <p>Find your moment of Shangri-La with buffet breakfast and an upgrade to the next room category on us</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.4999 <span>Rs.5999</span></div>
+                <a href="booking.html" class="btn">book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img decoding="async" src="rajasthanhotel.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Rajasthan </h3>
+                <p>Capture every small moment with a unique, 'instagrammable' stay</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Rs.3999<span>Rs.4500</span></div>
+                <a href="booking.html" class="btn">book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img decoding="async" src="khasmirhotel.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Kashmir </h3>
+                <p>Pamper yourself with a luxurious suite stay inclusive of treatment at kashmir in the nature. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.4500<span>Rs.5200</span></div>
+                <a href="booking.html" class="btn">book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img decoding="async" src="goahotel.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Goa </h3>
+                <p>Perfect for a stay in the heart of Goa or a relaxed dinner with friends and family,
+        severs the speciality from all over the globe throughout the day.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.4600 <span>Rs.5100</span></div>
+                <a href="booking.html" class="btn">book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img decoding="async" src="dheradunhotel.cms" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Dehradun </h3>
+                <p>Poolside brunches, amazing views, live entertainment and more.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.3700 <span>Rs.4000</span></div>
+                <a href="booking.html" class="btn">book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img decoding="async" src="gujrathotel.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt" ></i>Gujarat </a></h3>
+                <p>Experience the thrill of Gujarat and stay in the heart of the city while enjoying amazing benefits - 
+                    it's the perfect way to make the most of this incredible destination! The perfect place for those who enjoy the finer things in life.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.4100<span>Rs.5000</span></div>
+                <a href="booking.html" class="btn">book now</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--packages ends-->
+<!--services-->
+<section class="services" id="services">
+    <h1 class="heading1">Services</h1>
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-wifi"></i>
+                <h3>Free WiFi</h3>
+        </div>
+        <div class="box">
+            <i class="fas fa-spa"></i>
+                <h3>Spa Area</h3>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>Airport Transfer</h3>
+        </div>
+        <div class="box">
+            <i class="fas fa-credit-card"></i>
+                <h3>Cash Withdrawal</h3>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+                <h3>Food & Drinks</h3>
+        </div>
+        <div class="box">
+            <i class="fas fa-home"></i>
+                <h3>Restraunts</h3>
+        </div>
+    </div>
+</section>
+
+<!--gallery-->
+<section class="gallery" id="gallery">
+    <h1 class="heading1">Gallery</h1>
+
+
+<div class="box-container">
+    <div class="box">
+        <img decoding="async" src="healthyfoods.jpg" alt="">
+        <div class="content">
+            <h3>Healthy food,happy mood</h3>
+            <p>Order your favourite food and enjoy your holiday.</p>
+            <a href="healthyfood.html" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="healthyfood2.jpg" alt="">
+        <div class="content">
+            <h3>The flavor of tradition</h3>
+            <p>Have your Healthy/Cheat Food at our Buffet</p>
+            <a href="food.html" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="bed.jpg" alt="">
+        <div class="content">
+            <h3>Relax Yourself</h3>
+            <p>Have a comfortable rest.</p>
+            <a href="comfortablerest.html" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="beautiful.jpeg" alt="">
+        <div class="content">
+            <h3>Beautiful Views</h3>
+            <p>Enjoy and relax.</p>
+            <a href="beautifulviews.html" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="lobby.jpg" alt="">
+        <div class="content">
+            <h3>Lot more to explore</h3>
+            <p></p>
+            <a href="explore.html" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="room1.webp" alt="">
+        <div class="content">
+            <p>Get natural light in your rooms.Get hygienic rooms</p>
+            <a href="hygienic.html" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="room2.jpeg" alt="">
+        <div class="content">
+            <h3>National/International cuisine</h3>
+            <a href="internationalcuisine.html" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="room3.webp" alt="">
+        <div class="content">
+            <p>Get a place for office work.</p>
+            <a href="officework.html" class="btn">see more</a>
+        </div>
+    </div>
+    
+</div>
+</section>
+<section class="review" id="review">
+
+    <div class="swiper review-slider">
+       <div class="swiper-wrapper">
+
+          <div class="swiper-slide slide">
+             <h1 class="heading">client's review</h1>
+             <i class="fas fa-quote-right"></i>
+             <p>Magic stay at the Kutchh. The place is amazing, the view from the suite, the design of the hotel...
+                The beds in the suite are so comfortable, I never experience such quality bed sheets before. This reaches another quality level!
+                The service is also excellent, you feel at home with lot of nice attentions. We could not have expected more!
+                The swimming pool is wonderful with a nice view on the palm, very comfortable sun beds and nice ambiance.
+                The breakfast was the best I ever had in a hotel with lot of choices, quality ingredients and very good service.i recommended this place</p>
+             <div class="user">
+                <img src="kriti.jpeg" alt="">
+                <div class="user-info">
+                   <h3>Kirti Rawat</h3>
+                   <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                   </div>
+                </div>
+             </div>
+          </div>
+
+          <div class="swiper-slide slide">
+             <h2 class="heading">client's review</h2>
+             <i class="fas fa-quote-right"></i>
+             <p>If you are in the area you should stay one day in this hotel. It is truly amazing. Get dressed up as this
+                 is probably the best hotel you will visit. We went as a large party and the service was perfect.</p>
+             <div class="user">
+                <img src="abhishek.jpeg" alt="">
+                <div class="user-info">
+                   <h3>Abhishek Rao</h3>
+                   <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <i class="far fa-star"></i>
+                   </div>
+                </div>
+             </div>
+          </div>
+
+          <div class="swiper-slide slide">
+             <h2 class="heading">client's review</h2>
+             <i class="fas fa-quote-right"></i>
+             <p>The hotel was a delightful experience and the rooms were clean and comfortable.
+                The amenities offered were great, and the overall ambiance was inviting, I thoroughly enjoyed my stay.
+        </p>
+             <div class="user">
+                <img src="SandeepikaSharma.jpeg" alt="">
+                <div class="user-info">
+                   <h3>Sandeepika Sharma</h3>
+                   <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                   </div>
+                </div>
+             </div>
+          </div>
+
+          <div class="swiper-slide slide">
+             <h2 class="heading">client's review</h2>
+             <i class="fas fa-quote-right"></i>
+             <p>The best hotel I’ve ever been privileged enough to stay at. Gorgeous building, and it only gets more breathtaking when you walk in. High quality rooms 
+                (there was even a tv by the shower), and high quality service..</p>
+             <div class="user">
+                <img src="NischayMalhan.webp" alt="">
+                <div class="user-info">
+                   <h3>Nischay Malhan</h3>
+                   <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                   </div>
+                </div>
+             </div>
+          </div>
+
+          <div class="swiper-slide slide">
+             <h2 class="heading">client's review</h2>
+             <i class="fas fa-quote-right"></i>
+             <p>Perfect place for staycation.I am very happy with the staff and services I recieved.</p>
+             <div class="user">
+                <img src="Sourav Joshi.jpg" alt="">
+                <div class="user-info">
+                   <h3>Sourav Joshi</h3>
+                   <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <i class="far fa-star"></i>
+                   </div>
+                </div>
+             </div>
+          </div>
+
+          <div class="swiper-slide slide">
+             <h2 class="heading">client's review</h2>
+             <i class="fas fa-quote-right"></i>
+             <p>When I visited Rajasthan I stayed here.I am very happy with services I got. The best part of this Hotel is the view one gets from the window.</p>
+             <div class="user">
+                <img src="Pratik Pathak.jpeg" alt="">
+                <div class="user-info">
+                   <h3>Pratik Pathak</h3>
+                   <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                   </div>
+                </div>
+             </div>
+          </div>
+
+       </div>
+       <div class="swiper-pagination"></div>
+    </div>
+
+ </section>
+ <!-- Add Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Initialize Swiper
+        var swiper = new Swiper('.review-slider', {
+            // Optional parameters
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 4000, // Change slide every 4 seconds (4000 milliseconds)
+            },
+        });
+    });
+</script>
+
+
+  <!-- faq -->
+<br>
+<br>
+<br>
+  <section class="faqs" id="faq">
+    <h1 class="heading">frequently asked questions</h1>
+    <div class="row">
+       
+    
+       <div class="image">
+          <img src="faq3.jpg" alt="">
+       </div>
+
+       <div class="content">
+
+          <div class="box">
+            <h3>What are the hotel’s check-in and check-out times?</h3>
+            <p>Standard check in time is 7:00 and check-out time is 12:00. Read our full list of hotel policies and general information at our hotel.</p>
+          </div>
+
+          <div class="box">
+            <h3>Does my room have a washing machine?</h3>
+             <p>Washing machines are available for your convenient use in all suite rooms. Please refer to our “How-To’s” section for more information.</p>
+          </div>
+
+          <div class="box">
+             <h3>Can I check in to my hotel online?</h3>
+             <p>Yes, you can make your arrival seamless and save time before you arrive with our Online Check-in Service available on the website.</p>
+          </div>
+
+          <div class="box">
+             <h3>How can I talk to the Duty Manager?</h3>
+             <p>Please dial service key “1” from your in-room phone for assistance.</p>
+          </div>
+
+          <div class="box">
+             <h3>Can I store my bag?</h3>
+             <p>Yes, we do offer luggage storage free of charge. Our otel reserves to right to deny storage of oversized and suspicious item.</p>
+          </div>
+
+       </div>
+
+    </div>
+
+ </section>
+
+ <!-- end -->
+
+ <!-- footer -->
+
+ <section class="footer">
+
+    <div class="box-container">
+
+       <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i>+91 9873450122 </a>
+          <a href="#"> <i class="fas fa-phone"></i>+91 9875843212</a>
+          <a href="#"> <i class="fas fa-envelope"></i>luxury04@gmail.com</a>
+          <a href="#"> <i class="fas fa-map"></i>HYDERABAD, India</a>
+       </div>
+
+       <div class="box">
+          <h3>About us</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Our branches</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Hotel center</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Membership</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Reservation</a>
+       </div>
+
+       <div class="box">
+          <h3>Help</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Help center</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Privacy policyy</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Refund policy</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Terms of use</a>
+       </div>
+
+    </div>
+
+    <div class="share">
+       <a href="#" class="fab fa-facebook-f"></a>
+       <a href="#" class="fab fa-instagram"></a>
+       <a href="#" class="fab fa-twitter"></a>
+       <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+   
+
+ </section>
+
+ <!-- end -->
+
+<!--ends-->
+<!-- 
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+   <script src="main.js"></script>
+
+</body>
+</html>
+<!-- HTML for a modal popup -->
+<!-- <div id="myModal" class="modal">
+   <div class="modal-content">
+     <span class="close">&times;</span>
+     <p>This is a modal popup!</p>
+   </div>
+ </div> -->
+ 

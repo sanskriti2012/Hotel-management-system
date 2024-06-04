@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffcfc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #614949;
+    text-align: left;
+}
+
+
+th {
+    background-color: #f2f2f2;
+}
+
+#bookingsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#bookingsTable th, #bookingsTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#bookingsTable th {
+    background-color: #f2f2f2;
+}
+
+/* Divide each block width into fixed parts using CSS Grid */
+#bookingsTable tr {
+    display: grid;
+    grid-template-columns: repeat(9, 210px); 
+}

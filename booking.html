@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="book_page.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Your header content here -->
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>H</span>O<span>T</span>E<span>L</span></a>      
+        <nav class="navbar">
+            <i class="fa fa-home" aria-hidden="true" style="font-size:20px"></i>
+            <a href="p1.html">Home</a>
+            <a href="allbookingrecord.html">All Record Booking</a></div>
+            <a href="worker.html">Worker</a>
+            <a href="#packages">Offers</a>
+            <a href="#gallery">Gallery</a>
+            <a href="booking.html">Book</a>
+       </nav>
+       <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+    </div>
+    <form action="#" class="search-bar-container" onsubmit="return handleSearch()">
+      <input type="search" id="search-bar" placeholder="Search here..." autofocus>
+      <label for="search-bar" class="fas fa-search"></label>
+  </form>
+  
+  <script>
+      function handleSearch() {
+          var query = document.getElementById('search-bar').value.trim().toLowerCase();
+          // Navigate to the appropriate page based on the search query
+          if (query === 'booking' || query==='Booking' ||query==='booking customer') {
+              window.location.href = 'booking.html';
+          }
+          else if(query === 'delete booking' || query === 'delete' || query === 'delete data'){
+              window.location.href = 'deletebooking.html';
+          } 
+          else if(query === 'search booking' || query === 'search' || query === 'search data'){
+              window.location.href = 'searchbooking.html';
+          }else {
+              // Handle other search queries or show a message
+              alert('No matching page found for your search query: ' + query);
+          }
+          return false; // Prevent the form from actually submitting
+      }
+  </script>
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+    </header>
+    <section class="home" id="home">
+        <div class="controls">
+            <span class="vid-btn active" data-src="video4.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="viedo4.mp4" id="video-slider" loop autoplay muted></video>
+            </div>
+        </section>
+
+    <!-- Booking form -->
+    <div class="reservation-container">
+        <section class="reservation" id="reservation">
+            <h1 class="heading">Book Now</h1>
+            <form action="connect.php" method="POST">
+                <!-- Your form content here -->
+                <div class="container">
+
+                    <div class="box">
+                       <p>Customer ID <span>*</span></p>
+                       <input type="text" class="input" placeholder="Your Customer ID" name="customer_id">
+                    </div>
+
+                    <div class="box">
+                       <p>name <span>*</span></p>
+                       <input type="text" class="input" placeholder="Your Name" name="name">
+                    </div>
+          
+                    <div class="box">
+                       <p>email <span>*</span></p>
+                       <input type="text" class="input" placeholder="Your Email" name="email">
+                    </div>
+          
+                    <div class="box">
+                       <p>check in <span>*</span></p>
+                       <input type="date" class="input" name="checkin">
+                    </div>
+          
+                    <div class="box">
+                       <p>check out <span>*</span></p>
+                       <input type="date" class="input" name="checkout">
+                    </div>
+          
+                    <div class="box">
+                       <p>adults <span>*</span></p>
+                       <select name="adults" class="input">
+                          <option value="1">1 adults</option>
+                          <option value="2">2 adults</option>
+                          <option value="3">3 adults</option>
+                          <option value="4">4 adults</option>
+                          <option value="5">5 adults</option>
+                          <option value="6">6 adults</option>
+                       </select>
+                    </div>
+          
+                    <div class="box">
+                       <p>children <span>*</span></p>
+                       <select name="child" class="input">
+                          <option value="1">No child</option>
+                          <option value="1">1 child</option>
+                          <option value="2">2 child</option>
+                          <option value="3">3 child</option>
+                          <option value="4">4 child</option>
+                          <option value="5">5 child</option>
+                          <option value="6">6 child</option>
+                       </select>
+                    </div>
+          
+                    <div class="box">
+                       <p>rooms <span>*</span></p>
+                       <select name="rooms" class="input">
+                          <option value="1">1 rooms</option>
+                          <option value="2">2 rooms</option>
+                          <option value="3">3 rooms</option>
+                          <option value="4">4 rooms</option>
+                          <option value="5">5 rooms</option>
+                          <option value="6">6 rooms</option>
+                       </select>
+                    </div>
+          
+                    <div class="box">
+                       <p>room type <span>*</span></p>
+                       <select name="type" class="input">
+                          <option value="1">exclusive rooms</option>
+                          <option value="2">family rooms</option>
+                          <option value="3">daily rooms</option>
+                          <option value="4">panoramic rooms</option>
+                       </select>
+                    </div>
+           
+                 </div>
+                 <div class="box1 box">
+                 <input type="submit" value="Booking" class="btn" name="save">
+                 </div>
+            </form>
+        </section>
+    </div>
+    <!-- Rest of your HTML content -->
+</body>
+</html>

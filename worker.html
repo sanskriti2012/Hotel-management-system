@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worker Details</title>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link rel="stylesheet" href="worker.css">
+</head>
+<body style="background-color: rgb(166, 243, 230);">
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+       <a href="#" class="logo"><span>H</span>O<span>T</span>E<span>L</span></a>      
+       <nav class="navbar">
+           <i class="fa fa-home" aria-hidden="true" style="font-size:20px"></i>
+           <a href="p1.html">Home</a>
+           <a href="#packages">Rooms and suits</a></div>
+           <a href="workerdetail.html">All worker detail</a>
+           <a href="#packages">Offers</a>
+           <a href="#gallery">Gallery</a>
+           <a href="booking.html">Book</a>
+      </nav>
+      <div class="icons">
+       <i class="fas fa-search" id="search-btn"></i>
+       <!-- <a href="https://localhost/sem 3 project/register/login.php"><i class="fas fa-user" id="login-btn"></i></a> -->
+   </div>
+   <form action="#" class="search-bar-container" onsubmit="return handleSearch()">
+    <input type="search" id="search-bar" placeholder="Search here..." autofocus>
+    <label for="search-bar" class="fas fa-search"></label>
+</form>
+
+<script>
+    function handleSearch() {
+        var query = document.getElementById('search-bar').value.trim().toLowerCase();
+        // Navigate to the appropriate page based on the search query
+        if (query === 'booking' || query==='Booking' ||query==='booking customer') {
+            window.location.href = 'booking.html';
+        }
+        else if(query === 'delete booking' || query === 'delete' || query === 'delete data'){
+            window.location.href = 'deletebooking.html';
+        } 
+        else if(query === 'search booking' || query === 'search' || query === 'search data'){
+            window.location.href = 'searchbooking.html';
+        }else {
+            // Handle other search queries or show a message
+            alert('No matching page found for your search query: ' + query);
+        }
+        return false; // Prevent the form from actually submitting
+    }
+</script>
+
+   <form action="" class="search-bar-container">
+       <input type="search" id="search-bar" placeholder="Search here...">
+       <label for="search-bar" class="fas fa-search"></label>
+   </form>
+   </header>
+    
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Worker</title>
+    <!-- Add any necessary CSS stylesheets or links here -->
+    <link rel="stylesheet" href="worker.css">
+</head>
+<body>
+    <h1>Add Worker</h1>
+    <form action="worker.php" method="POST">
+        <label for="worker-name">Name:</label>
+        <input type="text" id="worker-name" name="worker-name" required>
+
+        <label for="worker-id">Worker_id:</label>
+        <input type="text" id="worker-id" name="worker-id" required>
+
+        <label for="worker-department">Department:</label>
+        <input type="text" id="worker-department" name="worker-department" required>
+
+        <label for="worker-email">Email:</label>
+        <input type="email" id="worker-email" name="worker-email">
+
+        <label for="worker-phone">Phone:</label>
+        <input type="tel" id="worker-phone" name="worker-phone">
+
+        <label for="Date-of-Birth">Date-of-Birth:</label>
+        <input type="date" id="Date-of-Birth" name="Date-of-Birth">
+        
+        
+        <label for="worker-address">Address:</label>
+        <textarea id="worker-address" name="worker-address"></textarea>
+
+        <label for="Experience">Experience:</label>
+        <textarea id="Experience" name="Experience"></textarea>
+
+        <label for="Training/Certifications">Training/Certifications:</label>
+        <textarea id="Training/Certifications" name="Training/Certifications"></textarea>
+
+
+        <label for="Emergency Contact">Emergency Contact:</label>
+        <input type="tel" id="Emergency Contact" name="Emergency_Contact">
+        
+
+        <!-- Add more input fields for other attributes as needed -->
+
+        <button type="submit">Add Worker</button>
+    </form>
+    <!-- Add any necessary JavaScript scripts or links here -->
+</body>
+</html>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+   <script src="main.js"></script>
+</body>
+</html>

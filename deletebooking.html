@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Booking</title>
+    <link rel="stylesheet" href="delete_booking.css">
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="viedo4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <header>
+        <!-- Your header content here -->
+    </header>
+
+    <div class="reservation-container">
+        <section class="reservation" id="reservation">
+            <h1 class="heading">Delete Booking</h1>
+            <form action="delete_booking.php" method="POST">
+                <div class="container">
+                    <div class="box">
+                        <p>Customer ID <span>*</span></p>
+                        <input type="text" class="input" placeholder="Customer ID to delete" name="customer_id">
+                    </div>
+                    <div class="box1 box">
+                        <input type="submit" value="Delete Record" class="btn" name="delete">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="delete_booking.js"></script>
+    <!-- Rest of your HTML content -->
+</body>
+</html>
