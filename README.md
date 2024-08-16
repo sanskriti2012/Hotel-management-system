@@ -18,7 +18,7 @@ Financial reports (per day, month, year) Occupancy rates and trends Customer sat
 
 User authentication and role-based access control Data encryption and backup Secured payment processing system Interfacing External System
 
-Integration with third-party booking platforms like Booking.com, Expedia Integration with property management systems. Interfaces with the POS used by restaurants and bars. Technologies Typically Utilize: Frontend: HTML, CSS, JavaScript, Angular, React. Backend: Node.js, Python (Django/Flask), Java (Spring), PHP (Laravel). Database: MySQL, PostgreSQL and MongoDB. Other Tools: APIs in relation to payment gateways, APIs to interface cloud storage, and APIs linked to analytics Project Development Phases: Requirement Gathering
+Integration with third-party booking platforms like Booking.com, Expedia Integration with property management systems. Interfaces with the POS used by restaurants and bars. Technologies Typically Utilize: Frontend: HTML, CSS, JavaScript, Angular, React. Backend:PHP (Laravel). Database: MySQL.
 
 Understand the requirements from the hotel owner end with respect to the project scope. System Design
 
